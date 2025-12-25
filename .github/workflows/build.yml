@@ -182,7 +182,7 @@ jobs:
       fail-fast: false
       matrix:
         target: [linuxarm64]
-        variant: [gpl 7.1,gpl 8.0]
+        variant: [gpl 8.0-rk]
     steps:
       - name: Free Disk-Space
         run: df -h && sudo apt-get clean && docker system prune -a -f && sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc && df -h
@@ -247,7 +247,7 @@ jobs:
       fail-fast: false
       matrix:
         target: [linuxarm64]
-        variant: [gpl 7.1,gpl 8.0]
+        variant: [gpl 8.0-rk]
     steps:
       - name: Free Disk-Space
         run: df -h && sudo apt-get clean && docker system prune -a -f && sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc && df -h
